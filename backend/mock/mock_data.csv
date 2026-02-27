@@ -1,0 +1,5 @@
+seller_gstin,seller_name,seller_state,buyer_gstin,buyer_name,buyer_state,invoice_id,invoice_date,tax_amount,claimed_tax_amount,return_id,filing_date,status
+27ABCDE1234F1Z5,Alpha Traders,MH,09PQRS5678T1Z2,Beta Enterprises,UP,INV1001,2025-01-15,12500,12500,RET2001,2025-02-10,FILED
+27ABCDE1234F1Z5,Alpha Traders,MH,07XYZAB9876C1Z7,Gamma Pvt Ltd,DL,INV1002,2025-01-18,9800,9500,RET2002,2025-02-12,FILED
+29LMNOP4321Q1Z3,Delta Supplies,KA,09PQRS5678T1Z2,Beta Enterprises,UP,INV1003,2025-01-20,15000,,RET2003,2025-02-15,DEFAULT
+33QWERT5678U1Z1,Epsilon Corp,TN,27ABCDE1234F1Z5,Alpha Traders,MH,INV1004,2025-01-22,7600,7600,,,

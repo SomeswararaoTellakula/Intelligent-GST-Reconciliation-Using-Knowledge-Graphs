@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+.card {
+  @apply backdrop-blur bg-white/10 dark:bg-gray-800/40 border border-white/20 dark:border-gray-700/40 rounded-2xl p-4 shadow-lg;
+}
+
+.badge-low { @apply bg-green-600 text-white px-2 py-1 rounded; }
+.badge-medium { @apply bg-yellow-600 text-white px-2 py-1 rounded; }
+.badge-high { @apply bg-red-600 text-white px-2 py-1 rounded; }
+
+.gradient-bg {
+  background-image: radial-gradient(1000px 600px at 10% 10%, rgba(14,165,233,0.2), transparent), radial-gradient(1000px 600px at 90% 10%, rgba(99,102,241,0.2), transparent);
+}
