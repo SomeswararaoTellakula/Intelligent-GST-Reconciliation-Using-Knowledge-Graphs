@@ -1,0 +1,37 @@
+/Users/apple/Documents/KLH/gst-kg-platform/backend/.venv/lib/python3.9/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/apple/Documents/KLH/gst-kg-platform/backend/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/apple/Documents/KLH/gst-kg-platform/backend/.venv/lib/python3.9/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+INFO:     Started server process [25207]
+INFO:     Waiting for application startup.
+2026-02-28 02:03:20.691 | INFO     | main:lifespan:43 - ==================================================
+2026-02-28 02:03:20.691 | INFO     | main:lifespan:44 - GST-KG Unified Platform Starting...
+2026-02-28 02:03:20.691 | INFO     | main:lifespan:45 - ==================================================
+2026-02-28 02:03:20.691 | INFO     | main:lifespan:48 - [Startup] Connecting to MongoDB...
+2026-02-28 02:03:25.796 | INFO     | main:lifespan:51 - [Startup] MongoDB connected successfully
+2026-02-28 02:03:25.796 | INFO     | main:lifespan:56 - [Startup] Connecting to Neo4j...
+2026-02-28 02:03:25.807 | INFO     | main:lifespan:64 - [Startup] Neo4j connected successfully
+2026-02-28 02:03:25.807 | INFO     | main:lifespan:69 - [Startup] Application ready!
+2026-02-28 02:03:25.807 | INFO     | main:lifespan:70 - ==================================================
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8001 (Press CTRL+C to quit)
+[MongoDB] WARNING: Could not connect to MongoDB Atlas: SSL handshake failed: localhost:27017: EOF occurred in violation of protocol (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 5000.0ms, connectTimeoutMS: 5000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69a1ff906309cf8bbd1243fe, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: localhost:27017: EOF occurred in violation of protocol (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 5000.0ms, connectTimeoutMS: 5000.0ms)')>]>
+[MongoDB] The app will start but DB operations may fail.
+[Neo4j] WARNING: Could not connect: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connect call failed ('::1', 7687, 0, 0))
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connect call failed ('127.0.0.1', 7687))
+[Neo4j] The app will start but graph operations may fail.
+INFO:     127.0.0.1:59709 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59715 - "GET /health HTTP/1.1" 200 OK
+[Dashboard] Neo4j error: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connect call failed ('::1', 7687, 0, 0))
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connect call failed ('127.0.0.1', 7687))
+INFO:     127.0.0.1:59727 - "GET /dashboard-summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59828 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59853 - "GET /api HTTP/1.1" 200 OK
+[Dashboard] Neo4j error: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connect call failed ('::1', 7687, 0, 0))
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connect call failed ('127.0.0.1', 7687))
+INFO:     127.0.0.1:60210 - "GET /dashboard-summary HTTP/1.1" 200 OK
